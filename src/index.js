@@ -5,20 +5,19 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import store from "./store";
 
+const todoChangeHandler = val =>
+  store.dispatch({ type: "CURRENT_UPDATE", payload: val });
+
 const render = () => {
   const state = store.getState();
-  ReactDOM.render(<App {...state} />, document.getElementById("root"));
+  ReactDOM.render(
+    <App {...state} changeCurrent={todoChangeHandler} />,
+    document.getElementById("root")
+  );
 };
 
 render();
 store.subscribe(render);
-
-setTimeout(() => {
-  store.dispatch({
-    type: "TODO_ADD",
-    payload: { id: 1, name: "Add new todo", isComplete: true }
-  });
-}, 1000);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

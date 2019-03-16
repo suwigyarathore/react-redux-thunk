@@ -6,6 +6,7 @@ import TodoList from "./components/TodoList";
 
 class App extends Component {
   render() {
+    const { todos, currentTodo, changeCurrent } = this.props;
     return (
       <div className="App">
         <header className="App-header">
@@ -23,8 +24,8 @@ class App extends Component {
           </a>
         </header>
         <div className="Todo-App">
-          <TodoForm />
-          <TodoList todos={this.props.todos} />
+          <TodoForm currentTodo={currentTodo} changeCurrent={changeCurrent} />
+          <TodoList todos={todos} />
         </div>
       </div>
     );
