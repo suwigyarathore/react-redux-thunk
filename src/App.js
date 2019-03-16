@@ -1,14 +1,11 @@
 import React, { Component } from "react";
-import { connect } from "react-redux";
 import logo from "./logo.svg";
 import "./App.css";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
-import { updateCurrent } from "./reducers/todo";
 
 class App extends Component {
   render() {
-    const { todos, currentTodo, updateCurrent } = this.props;
     return (
       <div className="App">
         <header className="App-header">
@@ -33,8 +30,5 @@ class App extends Component {
     );
   }
 }
-
-const mapDispatchToProps = { updateCurrent };
-const mapStateToProps = state => state;
 
 export default App;
