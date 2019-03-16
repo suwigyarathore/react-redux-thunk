@@ -26,8 +26,8 @@ class App extends Component {
           </a>
         </header>
         <div className="Todo-App">
-          <TodoForm currentTodo={currentTodo} changeCurrent={updateCurrent} />
-          <TodoList todos={todos} />
+          <TodoForm />
+          <TodoList />
         </div>
       </div>
     );
@@ -37,7 +37,4 @@ class App extends Component {
 const mapDispatchToProps = { updateCurrent };
 const mapStateToProps = state => state;
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(App);
+export default App;
