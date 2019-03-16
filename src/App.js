@@ -4,10 +4,11 @@ import logo from "./logo.svg";
 import "./App.css";
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
+import { updateCurrent } from "./reducers/todo";
 
 class App extends Component {
   render() {
-    const { todos, currentTodo, changeCurrent } = this.props;
+    const { todos, currentTodo, updateCurrent } = this.props;
     return (
       <div className="App">
         <header className="App-header">
@@ -25,7 +26,7 @@ class App extends Component {
           </a>
         </header>
         <div className="Todo-App">
-          <TodoForm currentTodo={currentTodo} changeCurrent={changeCurrent} />
+          <TodoForm currentTodo={currentTodo} changeCurrent={updateCurrent} />
           <TodoList todos={todos} />
         </div>
       </div>
@@ -33,7 +34,10 @@ class App extends Component {
   }
 }
 
+const mapDispatchToProps = { updateCurrent };
 const mapStateToProps = state => state;
-const ConnectedApp = connect(mapStateToProps)(App);
 
-export default ConnectedApp;
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(App);
