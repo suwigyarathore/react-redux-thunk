@@ -1,4 +1,5 @@
 import { getTodos, createTodos } from "../lib/todoServices";
+import { showMessage } from "./message";
 
 const initState = {
   todos: [],
@@ -20,6 +21,7 @@ export const fetchTodos = () => {
 
 export const saveTodo = name => {
   return dispatch => {
+    dispatch(showMessage("Saving Todo"));
     createTodos(name).then(todo => dispatch(addTodo(todo)));
   };
 };

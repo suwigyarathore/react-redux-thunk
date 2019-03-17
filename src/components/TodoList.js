@@ -27,7 +27,7 @@ class TodoList extends Component {
 }
 
 const mapDispatchToProps = { fetchTodos };
-const mapStateToProps = state => ({ todos: state.todos });
+const mapStateToProps = state => ({ todos: state.todo.todos });
 export default connect(
   mapStateToProps,
   mapDispatchToProps

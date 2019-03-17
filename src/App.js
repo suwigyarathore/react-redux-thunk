@@ -9,7 +9,7 @@ class App extends Component {
     return (
       <div className="App">
         <div className="Todo-App">
-          <Message message="Hello mate" />
+          <Message />
           <TodoForm />
           <TodoList />
         </div>
