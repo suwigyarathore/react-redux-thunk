@@ -2,7 +2,7 @@
   "todos": [
     {
       "name": "dasasd",
-      "isComplete": false,
+      "isComplete": true,
       "id": 17
     },
     {
