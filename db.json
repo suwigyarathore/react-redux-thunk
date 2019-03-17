@@ -18,7 +18,7 @@
     {
       "id": 4,
       "name": "Add records",
-      "isComplete": false
+      "isComplete": true
     },
     {
       "id": 5,
@@ -27,12 +27,12 @@
     },
     {
       "name": "test",
-      "isComplete": false,
+      "isComplete": true,
       "id": 6
     },
     {
       "name": "test",
-      "isComplete": false,
+      "isComplete": true,
       "id": 7
     },
     {
@@ -42,7 +42,7 @@
     },
     {
       "name": "sdfsd",
-      "isComplete": false,
+      "isComplete": true,
       "id": 9
     },
     {
@@ -59,6 +59,11 @@
       "name": "test",
       "isComplete": false,
       "id": 12
+    },
+    {
+      "name": "sdfsd",
+      "isComplete": false,
+      "id": 13
     }
   ]
 }
