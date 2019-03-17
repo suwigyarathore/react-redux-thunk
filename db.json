@@ -1,69 +1,14 @@
 {
   "todos": [
     {
-      "id": 1,
-      "name": "configure server",
-      "isComplete": true
-    },
-    {
-      "id": 2,
-      "name": "start server",
-      "isComplete": false
-    },
-    {
-      "id": 3,
-      "name": "Load data into app",
-      "isComplete": false
-    },
-    {
-      "id": 4,
-      "name": "Add records",
-      "isComplete": true
-    },
-    {
-      "id": 5,
-      "name": "update records",
-      "isComplete": false
-    },
-    {
-      "name": "test",
-      "isComplete": true,
-      "id": 6
-    },
-    {
-      "name": "test",
-      "isComplete": true,
-      "id": 7
-    },
-    {
-      "name": "test",
+      "name": "dasasd",
       "isComplete": false,
-      "id": 8
+      "id": 17
     },
     {
-      "name": "sdfsd",
-      "isComplete": true,
-      "id": 9
-    },
-    {
-      "name": "boom",
+      "name": "dasdas",
       "isComplete": false,
-      "id": 10
-    },
-    {
-      "name": "boon",
-      "isComplete": false,
-      "id": 11
-    },
-    {
-      "name": "test",
-      "isComplete": false,
-      "id": 12
-    },
-    {
-      "name": "sdfsd",
-      "isComplete": false,
-      "id": 13
+      "id": 18
     }
   ]
 }
